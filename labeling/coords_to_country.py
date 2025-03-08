@@ -3,7 +3,7 @@ from geopy.geocoders import Nominatim # remember to install package "geopy"
 from geopy.extra.rate_limiter import RateLimiter
 
 #Load the csv file
-datafile = pd.read_csv('coordinates.csv')
+datafile = pd.read_csv('../coordinates.csv')
 
 # Initialize Nominatim geocoder (Set to be unique and descriptive)
 geocoder = Nominatim(user_agent="GeoguessrAI (yuhac30@uci.edu)")
@@ -29,7 +29,7 @@ def get_country(latitude, longitude):
 
 # Process rows in chunks of 10 and save progress
 CHUNK_SIZE = 10
-for start in range(580, len(datafile), CHUNK_SIZE):
+for start in range(20890, len(datafile), CHUNK_SIZE):
     """ 
     Change the starting condition of the for loop to run on different data 
     (Eg. "for start in range(200, len(datafile), CHUNK_SIZE)" generates information for images 200~209)
