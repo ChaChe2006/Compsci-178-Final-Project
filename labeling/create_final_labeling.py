@@ -1,3 +1,13 @@
+"""
+Files moved manually for full training coverage:
+E:\UCI\CS 178\Project\archive\Streetview_Image_Dataset_Kaggle_25k\442.png,Guinea-Bissau
+E:\UCI\CS 178\Project\archive\Streetview_Image_Dataset_Kaggle_25k\1143.png,Guinea-Bissau
+E:\UCI\CS 178\Project\archive\Streetview_Image_Dataset_Kaggle_25k\2582.png,Guinea-Bissau
+"""
+
+
+
+
 import pandas as pd
 import os
 

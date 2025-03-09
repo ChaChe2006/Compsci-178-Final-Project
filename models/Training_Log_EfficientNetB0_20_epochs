@@ -1,0 +1,238 @@
+"C:\Python 3.12\python.exe" "E:\UCI\CS 178\Project\Source\models\EfficientNetB0.py"
+2025-03-09 03:47:37.068350: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-03-09 03:47:37.881950: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+                                          image_path    country
+0  E:\UCI\CS 178\Project\archive\Streetview_Image...  Australia
+1  E:\UCI\CS 178\Project\archive\Streetview_Image...   Colombia
+2  E:\UCI\CS 178\Project\archive\Streetview_Image...     Brazil
+3  E:\UCI\CS 178\Project\archive\Streetview_Image...    Uruguay
+4  E:\UCI\CS 178\Project\archive\Streetview_Image...  Australia
+                                          image_path  ...                                 class_label_onehot
+0  E:\UCI\CS 178\Project\archive\Streetview_Image...  ...  [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, ...
+1  E:\UCI\CS 178\Project\archive\Streetview_Image...  ...  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...
+2  E:\UCI\CS 178\Project\archive\Streetview_Image...  ...  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...
+3  E:\UCI\CS 178\Project\archive\Streetview_Image...  ...  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...
+4  E:\UCI\CS 178\Project\archive\Streetview_Image...  ...  [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, ...
+
+[5 rows x 4 columns]
+2025-03-09 03:47:40.587762: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 221s 449ms/step - accuracy: 0.0782 - loss: 3.9663 - val_accuracy: 0.0482 - val_loss: 4.1787
+Epoch 2/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 237s 508ms/step - accuracy: 0.1232 - loss: 3.6324 - val_accuracy: 0.0431 - val_loss: 4.4955
+Epoch 3/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 233s 499ms/step - accuracy: 0.1529 - loss: 3.4557 - val_accuracy: 0.0832 - val_loss: 3.8722
+Epoch 4/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 240s 513ms/step - accuracy: 0.1707 - loss: 3.3262 - val_accuracy: 0.0617 - val_loss: 4.5262
+Epoch 5/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 234s 500ms/step - accuracy: 0.1946 - loss: 3.2071 - val_accuracy: 0.0841 - val_loss: 4.2672
+Epoch 6/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 227s 487ms/step - accuracy: 0.2221 - loss: 3.0793 - val_accuracy: 0.0929 - val_loss: 4.6100
+Epoch 7/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 227s 485ms/step - accuracy: 0.2448 - loss: 2.9291 - val_accuracy: 0.0237 - val_loss: 6.6048
+Epoch 8/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 226s 485ms/step - accuracy: 0.2702 - loss: 2.7782 - val_accuracy: 0.0277 - val_loss: 6.9172
+Epoch 9/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 227s 485ms/step - accuracy: 0.3072 - loss: 2.5917 - val_accuracy: 0.0296 - val_loss: 6.8510
+Epoch 10/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 217s 465ms/step - accuracy: 0.3510 - loss: 2.3907 - val_accuracy: 0.0477 - val_loss: 4.6686
+Epoch 11/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 216s 463ms/step - accuracy: 0.4025 - loss: 2.1719 - val_accuracy: 0.0485 - val_loss: 5.1594
+Epoch 12/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 220s 471ms/step - accuracy: 0.4515 - loss: 1.9458 - val_accuracy: 0.0536 - val_loss: 5.4025
+Epoch 13/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 217s 466ms/step - accuracy: 0.5210 - loss: 1.6862 - val_accuracy: 0.1404 - val_loss: 4.8898
+Epoch 14/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 227s 487ms/step - accuracy: 0.5792 - loss: 1.4614 - val_accuracy: 0.1395 - val_loss: 5.1349
+Epoch 15/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 227s 486ms/step - accuracy: 0.6461 - loss: 1.2325 - val_accuracy: 0.1910 - val_loss: 5.6926
+Epoch 16/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 228s 488ms/step - accuracy: 0.6962 - loss: 1.0447 - val_accuracy: 0.1393 - val_loss: 6.6314
+Epoch 17/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 228s 488ms/step - accuracy: 0.7438 - loss: 0.8805 - val_accuracy: 0.0905 - val_loss: 7.7872
+Epoch 18/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 227s 486ms/step - accuracy: 0.7781 - loss: 0.7367 - val_accuracy: 0.1670 - val_loss: 6.1748
+Epoch 19/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 227s 487ms/step - accuracy: 0.8122 - loss: 0.6319 - val_accuracy: 0.1234 - val_loss: 7.2235
+Epoch 20/20
+467/467 ━━━━━━━━━━━━━━━━━━━━ 224s 481ms/step - accuracy: 0.8380 - loss: 0.5479 - val_accuracy: 0.1770 - val_loss: 6.9757
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 1s/step
+Predicted: ['Thailand' 'Brazil' 'Brazil' 'Mexico' 'Australia' 'Brazil' 'Brazil'
+ 'Bangladesh' 'United States' 'United States' 'United States' 'Belgium'
+ 'United States' 'Argentina' 'Botswana' 'Brazil' 'Australia' 'Japan'
+ 'Senegal' 'Brazil' 'Finland' 'Turkey' 'Nigeria' 'Sweden' 'Brazil'
+ 'Finland' 'Argentina' 'United Kingdom' 'Brazil' 'Peru' 'Malaysia'
+ 'Russia']
+Actual: ['Mexico' 'Brazil' 'Brazil' 'Peru' 'Australia' 'Brazil' 'United States'
+ 'United States' 'United States' 'United States' 'United States'
+ 'United States' 'United States' 'Turkey' 'Botswana' 'Brazil' 'Australia'
+ 'Switzerland' 'Senegal' 'India' 'United States' 'United States'
+ 'United States' 'United States' 'United States' 'United States'
+ 'United States' 'United States' 'Argentina' 'Mexico' 'Indonesia' 'Russia']
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 464ms/step
+Predicted: ['Brazil' 'Kenya' 'Brazil' 'Mongolia' 'Argentina' 'Brazil' 'Botswana'
+ 'Thailand' 'Australia' 'Mongolia' 'Bolivia' 'Australia' 'Botswana'
+ 'Kenya' 'Nigeria' 'Nigeria' 'Turkey' 'Kenya' 'Brazil' 'Brazil' 'Brazil'
+ 'Nigeria' 'Australia' 'Botswana' 'India' 'Australia' 'Nigeria'
+ 'Australia' 'Mexico' 'Nigeria' 'Brazil' 'Argentina']
+Actual: ['Australia' 'Kenya' 'Brazil' 'Mongolia' 'Brazil' 'Argentina' 'Russia'
+ 'Indonesia' 'Australia' 'Mongolia' 'Turkey' 'Argentina' 'Argentina'
+ 'Hungary' 'Brazil' 'Uruguay' 'Turkey' 'Kenya' 'South Africa' 'Cambodia'
+ 'Australia' 'Poland' 'Australia' 'Bulgaria' 'Australia' 'Australia'
+ 'Nigeria' 'Kenya' 'Argentina' 'Ukraine' 'Australia' 'Russia']
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 467ms/step
+Predicted: ['Australia' 'Brazil' 'Spain' 'Australia' 'Brazil' 'Argentina' 'Cambodia'
+ 'Mexico' 'Germany' 'Mongolia' 'Nigeria' 'India' 'Ghana' 'Brazil'
+ 'Botswana' 'Cambodia' 'Finland' 'Kenya' 'Serbia' 'Tunisia' 'Brazil'
+ 'Brazil' 'Australia' 'Ghana' 'Mongolia' 'Brazil' 'Poland' 'Argentina'
+ 'Russia' 'Bangladesh' 'Uruguay' 'Senegal']
+Actual: ['Australia' 'Brazil' 'South Africa' 'Australia' 'Brazil' 'Argentina'
+ 'Brazil' 'Argentina' 'Australia' 'Mongolia' 'Indonesia' 'Sweden' 'Brazil'
+ 'Brazil' 'Serbia' 'Ghana' 'Ireland' 'South Africa' 'Russia' 'Poland'
+ 'Brazil' 'Mexico' 'Brazil' 'Mongolia' 'Greenland' 'Brazil' 'Russia'
+ 'Argentina' 'Russia' 'Poland' 'Argentina' 'Australia']
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 465ms/step
+Predicted: ['Argentina' 'Kenya' 'Brazil' 'Brazil' 'Nigeria' 'Brazil' 'Nigeria'
+ 'Australia' 'Brazil' 'Malaysia' 'Brazil' 'Argentina' 'Nigeria' 'Brazil'
+ 'Ghana' 'Russia' 'Senegal' 'Senegal' 'Brazil' 'Nigeria' 'Nigeria'
+ 'Sweden' 'Australia' 'Brazil' 'Uruguay' 'Thailand' 'Australia'
+ 'Australia' 'Mongolia' 'Australia' 'Nigeria' 'Nigeria']
+Actual: ['Brazil' 'Romania' 'Argentina' 'Australia' 'Colombia' 'Brazil' 'India'
+ 'Australia' 'Brazil' 'Brazil' 'Brazil' 'Argentina' 'Russia' 'Poland'
+ 'Ghana' 'Russia' 'South Africa' 'Brazil' 'Mongolia' 'Cambodia' 'Russia'
+ 'Poland' 'Australia' 'Russia' 'Mongolia' 'Cambodia' 'Australia'
+ 'Mongolia' 'Mongolia' 'Brazil' 'Turkey' 'Kenya']
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 463ms/step
+Predicted: ['India' 'Australia' 'Botswana' 'Australia' 'Turkey' 'Malaysia'
+ 'Australia' 'Nigeria' 'Spain' 'Australia' 'South Africa' 'Indonesia'
+ 'Nigeria' 'Nigeria' 'Bolivia' 'Brazil' 'Botswana' 'Brazil' 'Turkey'
+ 'Brazil' 'Turkey' 'South Africa' 'Senegal' 'Botswana' 'Australia'
+ 'Brazil' 'Brazil' 'Switzerland' 'Senegal' 'Nigeria' 'Brazil' 'Argentina']
+Actual: ['Brazil' 'Brazil' 'Botswana' 'Australia' 'Turkey' 'Brazil' 'Russia'
+ 'Nigeria' 'Russia' 'Australia' 'Australia' 'Sweden' 'Senegal' 'Brazil'
+ 'Argentina' 'Mexico' 'Botswana' 'Turkey' 'Russia' 'Brazil' 'Ukraine'
+ 'Brazil' 'Kenya' 'Argentina' 'Australia' 'Brazil' 'Brazil' 'Lithuania'
+ 'Brazil' 'India' 'Spain' 'Russia']
+2025-03-09 05:03:15.526708: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+161/161 ━━━━━━━━━━━━━━━━━━━━ 35s 216ms/step - accuracy: 0.3427 - loss: 4.7878
+2025-03-09 05:03:50.517040: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+	 [[{{node IteratorGetNext}}]]
+C:\Python 3.12\Lib\site-packages\keras\src\trainers\epoch_iterator.py:151: UserWarning: Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches. You may need to use the `.repeat()` function when building your dataset.
+  self._interrupted_warning()
+Test Accuracy: 35.08%
+161/161 ━━━━━━━━━━━━━━━━━━━━ 37s 221ms/step
+Classification Report:
+                       precision    recall  f1-score   support
+
+               Mexico       1.00      0.25      0.40         4
+               Brazil       0.00      0.00      0.00         0
+                 Peru       0.00      0.00      0.00         0
+            Australia       0.37      0.34      0.35       441
+        United States       0.00      0.00      0.00         0
+               Turkey       0.61      0.61      0.61       752
+             Botswana       0.13      0.11      0.12        19
+          Switzerland       0.11      0.08      0.10        12
+              Senegal       0.00      0.00      0.00         0
+                India       0.00      0.00      0.00         8
+            Argentina       0.00      0.00      0.00         3
+            Indonesia       0.10      0.24      0.14        34
+               Russia       0.42      0.71      0.53        99
+                Kenya       0.49      0.56      0.52       894
+             Mongolia       0.00      0.00      0.00        29
+              Hungary       0.00      0.00      0.00        42
+              Uruguay       0.00      0.00      0.00         0
+         South Africa       0.00      0.00      0.00         8
+             Cambodia       0.00      0.00      0.00         0
+               Poland       0.03      0.02      0.02        53
+             Bulgaria       0.00      0.00      0.00         0
+              Nigeria       0.00      0.00      0.00         0
+              Ukraine       0.00      0.00      0.00         8
+               Sweden       0.00      0.00      0.00         0
+               Serbia       0.00      0.00      0.00        23
+                Ghana       0.00      0.00      0.00         0
+              Ireland       0.00      0.00      0.00         6
+            Greenland       0.00      0.00      0.00         0
+              Romania       0.00      0.00      0.00         0
+             Colombia       0.00      0.00      0.00         4
+            Lithuania       0.00      0.00      0.00         0
+                Spain       0.00      0.00      0.00         0
+               Latvia       0.00      0.00      0.00        12
+                Japan       0.00      0.00      0.00         4
+                Italy       0.00      0.00      0.00         0
+             Thailand       0.23      0.27      0.25        82
+               Greece       0.00      0.00      0.00         2
+              Bolivia       0.00      0.00      0.00         0
+              Denmark       0.00      0.00      0.00         2
+           Kyrgyzstan       0.09      0.17      0.12        48
+              Czechia       0.00      0.00      0.00        15
+       United Kingdom       0.00      0.00      0.00        23
+            Sri Lanka       0.00      0.00      0.00         5
+             Slovakia       0.00      0.00      0.00         0
+              Finland       0.00      0.00      0.00         0
+                 Mali       0.00      0.00      0.00        27
+              Croatia       0.00      0.00      0.00         8
+           Madagascar       0.22      0.38      0.27       103
+               Taiwan       0.09      0.06      0.07        68
+              Austria       0.00      0.00      0.00         0
+          Philippines       0.00      0.00      0.00         0
+           Bangladesh       0.00      0.00      0.00        15
+              Ecuador       0.00      0.00      0.00         0
+               Jordan       0.00      0.00      0.00        24
+              Estonia       0.14      0.08      0.11        12
+              Tunisia       0.00      0.00      0.00         4
+              Lesotho       0.00      0.00      0.00         0
+              Albania       0.34      0.36      0.35       111
+           Montenegro       0.00      0.00      0.00         0
+             Slovenia       1.00      0.09      0.17        11
+Palestinian Territory       0.00      0.00      0.00        22
+             Malaysia       0.00      0.00      0.00         6
+                Chile       0.10      0.06      0.08        16
+          South Korea       0.00      0.00      0.00         1
+              Belgium       0.00      0.00      0.00         6
+              Germany       0.05      0.13      0.07        15
+             Portugal       1.00      0.44      0.62        27
+            Guatemala       0.00      0.00      0.00         0
+               Bhutan       0.21      0.09      0.12       219
+              Iceland       0.66      0.39      0.49       118
+ United Arab Emirates       0.00      0.00      0.00         3
+             Eswatini       0.00      0.00      0.00         0
+               France       0.00      0.00      0.00         0
+              Vanuatu       0.00      0.00      0.00         0
+               Uganda       0.00      0.00      0.00         0
+      North Macedonia       0.00      0.00      0.00         0
+             Tanzania       0.23      0.72      0.35       206
+           Luxembourg       0.00      0.00      0.00         1
+
+            micro avg       0.38      0.42      0.40      3655
+            macro avg       0.10      0.08      0.08      3655
+         weighted avg       0.39      0.42      0.39      3655
+
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Python 3.12\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Confusion Matrix:
+[[  1   0   0 ...   0   0   0]
+ [  0 149   0 ...   3   3   0]
+ [  0   0   0 ...   0   0   0]
+ ...
+ [  0   8   0 ...  33   0   0]
+ [  0   9   0 ...   0   1   0]
+ [  0   0   0 ...   0   0   0]]
+
+Process finished with exit code 0
