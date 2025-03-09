@@ -122,7 +122,7 @@ Actual: ['Brazil' 'Russia' 'Australia' 'Australia' 'Brazil' 'Brazil' 'Mexico'
 
 115/115 ━━━━━━━━━━━━━━━━━━━━ 25s 213ms/step - accuracy: 0.3060 - loss: 3.9381
 
-Test Accuracy: 31.95%
+Test Accuracy:
 115/115 ━━━━━━━━━━━━━━━━━━━━ 25s 211ms/step
 Classification Report:
                precision    recall  f1-score   support

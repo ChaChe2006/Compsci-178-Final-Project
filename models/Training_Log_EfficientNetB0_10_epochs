@@ -1,0 +1,114 @@
+Epoch 1/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 627s 521ms/step - accuracy: 0.0495 - loss: 3.9734 - val_accuracy: 0.0433 - val_loss: 3.8224
+Epoch 2/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 616s 524ms/step - accuracy: 0.1384 - loss: 3.4326 - val_accuracy: 0.1612 - val_loss: 3.3303
+Epoch 3/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 675s 575ms/step - accuracy: 0.2294 - loss: 3.0335 - val_accuracy: 0.3042 - val_loss: 2.6910
+Epoch 4/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 671s 571ms/step - accuracy: 0.3385 - loss: 2.5906 - val_accuracy: 0.2058 - val_loss: 3.4534
+Epoch 5/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 657s 559ms/step - accuracy: 0.4466 - loss: 2.1579 - val_accuracy: 0.3429 - val_loss: 2.7369
+Epoch 6/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 597s 508ms/step - accuracy: 0.5425 - loss: 1.7668 - val_accuracy: 0.2174 - val_loss: 3.5550
+Epoch 7/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 586s 499ms/step - accuracy: 0.6175 - loss: 1.4616 - val_accuracy: 0.5402 - val_loss: 1.8990
+Epoch 8/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 586s 499ms/step - accuracy: 0.6873 - loss: 1.1933 - val_accuracy: 0.5237 - val_loss: 1.9809
+Epoch 9/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 578s 492ms/step - accuracy: 0.7330 - loss: 0.9983 - val_accuracy: 0.6447 - val_loss: 1.5658
+Epoch 10/10
+1175/1175 ━━━━━━━━━━━━━━━━━━━━ 600s 511ms/step - accuracy: 0.7715 - loss: 0.8478 - val_accuracy: 0.7129 - val_loss: 1.3227
+1/1 ━━━━━━━━━━━━━━━━━━━━ 2s 2s/step
+Predicted: ['South Korea' 'Cambodia' 'Brazil' 'Australia' 'Australia' 'Czechia'
+ 'Romania' 'Netherlands' 'France' 'France' 'Portugal' 'Philippines'
+ 'Russia' 'Brazil' 'Australia' 'Botswana' 'Belgium' 'Israel' 'Russia'
+ 'Brazil' 'India' 'United States' 'Brazil' 'Japan' 'Australia' 'Brazil'
+ 'Australia' 'Australia' 'Nigeria' 'Australia' 'Mongolia' 'Brazil']
+Actual: ['Mexico' 'Brazil' 'Brazil' 'Australia' 'Brazil' 'United States'
+ 'United States' 'United States' 'United States' 'United States'
+ 'United States' 'United States' 'Turkey' 'Brazil' 'Australia' 'India'
+ 'United States' 'United States' 'United States' 'United States'
+ 'United States' 'United States' 'United States' 'United States'
+ 'Argentina' 'Mexico' 'Russia' 'Australia' 'Kenya' 'Brazil' 'Mongolia'
+ 'Brazil']
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 543ms/step
+Predicted: ['Brazil' 'Russia' 'Australia' 'Mongolia' 'Russia' 'Australia' 'Argentina'
+ 'Ghana' 'Peru' 'Kenya' 'Uruguay' 'Australia' 'Australia' 'India'
+ 'Australia' 'Nigeria' 'Kenya' 'Mongolia' 'Brazil' 'Bulgaria' 'Botswana'
+ 'Brazil' 'Colombia' 'Australia' 'Brazil' 'Argentina' 'Brazil' 'Turkey'
+ 'Peru' 'Mongolia' 'Thailand' 'Argentina']
+Actual: ['Argentina' 'Russia' 'Australia' 'Mongolia' 'Turkey' 'Argentina'
+ 'Argentina' 'Brazil' 'Turkey' 'Kenya' 'South Africa' 'Australia'
+ 'Australia' 'Australia' 'Australia' 'Nigeria' 'Kenya' 'Argentina'
+ 'Australia' 'Russia' 'Australia' 'Brazil' 'South Africa' 'Australia'
+ 'Brazil' 'Argentina' 'Brazil' 'Argentina' 'Australia' 'Mongolia' 'Brazil'
+ 'Brazil']
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 546ms/step
+Predicted: ['India' 'Mongolia' 'Brazil' 'Brazil' 'Australia' 'Mongolia' 'Brazil'
+ 'Spain' 'Brazil' 'Russia' 'Mongolia' 'Nigeria' 'Turkey' 'Mongolia'
+ 'Australia' 'Brazil' 'Nigeria' 'Australia' 'Brazil' 'Brazil' 'Brazil'
+ 'Mongolia' 'Nigeria' 'Russia' 'Nigeria' 'Brazil' 'Mongolia' 'Mongolia'
+ 'Australia' 'Russia' 'Mongolia' 'Australia']
+Actual: ['South Africa' 'Russia' 'Brazil' 'Mexico' 'Brazil' 'Mongolia' 'Brazil'
+ 'Russia' 'Argentina' 'Russia' 'Argentina' 'Australia' 'Brazil'
+ 'Argentina' 'Australia' 'Brazil' 'India' 'Australia' 'Brazil' 'Brazil'
+ 'Brazil' 'Argentina' 'Russia' 'Russia' 'South Africa' 'Brazil' 'Mongolia'
+ 'Russia' 'Australia' 'Russia' 'Mongolia' 'Australia']
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 520ms/step
+Predicted: ['Mongolia' 'Mongolia' 'Australia' 'Thailand' 'Kenya' 'India' 'Brazil'
+ 'Australia' 'Argentina' 'Brazil' 'India' 'India' 'Japan' 'Australia'
+ 'Nigeria' 'Australia' 'Argentina' 'Argentina' 'Turkey' 'Russia' 'Brazil'
+ 'Brazil' 'Australia' 'Russia' 'Australia' 'Brazil' 'Brazil' 'Romania'
+ 'Nigeria' 'South Korea' 'Mexico' 'Nigeria']
+Actual: ['Mongolia' 'Mongolia' 'Brazil' 'Turkey' 'Kenya' 'Brazil' 'Brazil'
+ 'Australia' 'Turkey' 'Brazil' 'Russia' 'Nigeria' 'Russia' 'Australia'
+ 'Australia' 'Brazil' 'Argentina' 'Mexico' 'Turkey' 'Russia' 'Brazil'
+ 'Brazil' 'Kenya' 'Argentina' 'Australia' 'Brazil' 'Brazil' 'Brazil'
+ 'India' 'Russia' 'Mexico' 'Nigeria']
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 493ms/step
+Predicted: ['Brazil' 'Russia' 'Nigeria' 'Uruguay' 'Brazil' 'Brazil' 'Finland' 'India'
+ 'Cambodia' 'Mongolia' 'Netherlands' 'Argentina' 'Australia' 'Australia'
+ 'Nigeria' 'Australia' 'Greenland' 'Argentina' 'Mongolia' 'Australia'
+ 'India' 'Russia' 'Australia' 'Brazil' 'Finland' 'South Africa' 'Brazil'
+ 'Mexico' 'India' 'Russia' 'Australia' 'India']
+Actual: ['Brazil' 'Russia' 'Australia' 'Australia' 'Brazil' 'Brazil' 'Mexico'
+ 'Russia' 'Argentina' 'Argentina' 'Argentina' 'Mexico' 'Australia'
+ 'Argentina' 'Brazil' 'Brazil' 'Nigeria' 'Argentina' 'Mongolia'
+ 'South Africa' 'Brazil' 'Russia' 'Brazil' 'Mexico' 'Brazil' 'Russia'
+ 'Brazil' 'South Africa' 'India' 'Russia' 'Brazil' 'Australia']
+2025-03-09 16:49:06.893086: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+115/115 ━━━━━━━━━━━━━━━━━━━━ 27s 233ms/step - accuracy: 0.4656 - loss: 2.3427
+2025-03-09 16:49:33.989697: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+	 [[{{node IteratorGetNext}}]]
+C:\Python 3.12\Lib\site-packages\keras\src\trainers\epoch_iterator.py:151: UserWarning: Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches. You may need to use the `.repeat()` function when building your dataset.
+  self._interrupted_warning()
+Test Accuracy: 48.14%
+115/115 ━━━━━━━━━━━━━━━━━━━━ 27s 225ms/step
+Classification Report:
+               precision    recall  f1-score   support
+
+       Mexico       0.00      0.00      0.00         0
+       Brazil       0.00      0.00      0.00         0
+    Australia       0.00      0.00      0.00         0
+United States       0.63      0.35      0.45       441
+       Turkey       0.00      0.00      0.00         0
+        India       0.65      0.68      0.66       752
+    Argentina       0.00      0.00      0.00         0
+       Russia       0.00      0.00      0.00         0
+        Kenya       0.00      0.00      0.00         0
+     Mongolia       0.00      0.00      0.00         0
+ South Africa       0.00      0.00      0.00         0
+      Nigeria       0.00      0.00      0.00         0
+
+    micro avg       0.64      0.56      0.60      1193
+    macro avg       0.11      0.09      0.09      1193
+ weighted avg       0.64      0.56      0.58      1193
+
+Confusion Matrix:
+[[155  37   1 ...   0   0   5]
+ [ 12 508   0 ...   0   0   2]
+ [  0   0   0 ...   0   0   0]
+ ...
+ [  0   0   0 ...   0   0   0]
+ [  3   5   0 ...   8  21   0]
+ [  0   0   0 ...   0   0   0]]

@@ -39,6 +39,39 @@ def group_countries(df, min_samples = 100):
 # Apply grouping
 df = group_countries(df, min_samples = 100)
 
+
+def balanced_sampling(df, target_samples = 1000, random_state = 42):
+    """
+    Balance dataset through oversampling and undersampling
+    """
+    # Separate classes
+    class_counts = df['country_grouped'].value_counts()
+
+    balanced_dfs = []
+    for country, count in class_counts.items():
+        class_df = df[df['country_grouped'] == country]
+
+        if count < target_samples:
+            # Oversample minority classes
+            oversampled = class_df.sample(
+                n = target_samples - count,
+                replace = True,
+                random_state = random_state
+            )
+            balanced_dfs.append(pd.concat([class_df, oversampled]))
+        else:
+            # Undersample majority classes
+            balanced_dfs.append(class_df.sample(
+                n = target_samples,
+                random_state = random_state
+            ))
+
+    return pd.concat(balanced_dfs).sample(frac = 1, random_state = random_state)
+
+
+# Apply balanced sampling
+df = balanced_sampling(df, target_samples = 1000)
+
 def load_and_preprocess_image(image_path, target_size=(224, 224)):
     """
     Load an image, resize it, and normalize pixel values.
@@ -111,7 +144,7 @@ model.compile(optimizer=Nadam(learning_rate=1e-4), loss='categorical_crossentrop
 history = model.fit(
     train_dataset,
     validation_data=val_dataset,
-    epochs=30,
+    epochs=10,
     steps_per_epoch = len(train_df) // batch_size,
     validation_steps = len(val_df) // batch_size
 )
@@ -165,7 +198,8 @@ print("Confusion Matrix:")
 print(conf_matrix)
 
 # Save the Model
-model.save('CountryClassifier_EfficientNetB0_30_epochs.keras')
+### Remember to change the model name to prevent overwriting existing models ###
+model.save('CountryClassifier_EfficientNetB0_10_epochs.keras')
 
 # Plot training history
 plt.figure(figsize=(12, 4))

@@ -87,5 +87,5 @@ def main(image_path, model_path = 'CountryClassifier_EfficientNetB0_20_epochs.ke
 
 
 if __name__ == '__main__':
-    image_path = input("Enter image file path:")
+    image_path = input("Enter image file path:").strip('\"') # removes quotation marks in copied path, modify if needed.
     main(image_path)
