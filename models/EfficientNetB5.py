@@ -1,5 +1,6 @@
 import tensorflow as tf
-
+print("Num GPUs Available:", len(tf.config.experimental.list_physical_devices('GPU')))
+print(tf.__version__)
 # run on GPU
 gpus = tf.config.list_physical_devices('GPU')
 if gpus:
@@ -13,11 +14,14 @@ if gpus:
 
 import pandas as pd
 import os
+
 from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications import EfficientNetB0
+from tensorflow.keras.applications import EfficientNetB5
 from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Nadam
+from tensorflow.keras.callbacks import ModelCheckpoint
+
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.preprocessing import LabelEncoder
@@ -84,7 +88,7 @@ def balanced_sampling(df, target_samples = 1000, random_state = 42):
 # Apply balanced sampling
 df = balanced_sampling(df, target_samples = 1000)
 
-def load_and_preprocess_image(image_path, target_size=(224, 224)):
+def load_and_preprocess_image(image_path, target_size=(456, 456)):
     """
     Load an image, resize it, and normalize pixel values.
     """
@@ -102,7 +106,7 @@ df['class_label_onehot'] = df['class_label_encoded'].apply(lambda x: to_categori
 
 print(df.head())
 
-def create_dataset(df, image_dir, batch_size=32, target_size=(224, 224)):
+def create_dataset(df, image_dir, batch_size=32, target_size=(456, 456)):
     """
     Creates a TensorFlow Dataset.
     """
@@ -130,13 +134,13 @@ train_df, val_df = train_test_split(df, test_size=0.2, random_state=42)
 # Create datasets
 image_dir = 'dataset/train'
 batch_size = 32
-image_size = (224, 224)
+image_size = (456, 456)
 train_dataset = create_dataset(train_df, image_dir, batch_size, image_size).repeat() #make sure dataset repeats indefinitely to prevent out of bounds error
 val_dataset = create_dataset(val_df, image_dir, batch_size, image_size).repeat()
 
-base_model = EfficientNetB0(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+base_model = EfficientNetB5(weights='imagenet', include_top=False, input_shape=(456, 456, 3))
 base_model.trainable = True
-for layer in base_model.layers[:100]:  # Unfreeze the top 100 layers
+for layer in base_model.layers[:300]:  # Unfreeze the top 100 layers
     layer.trainable = False
 
 x = base_model.output
@@ -152,13 +156,27 @@ model = Model(inputs=base_model.input, outputs=predictions)
 # Compile the model
 model.compile(optimizer=Nadam(learning_rate=1e-4), loss='categorical_crossentropy', metrics=['accuracy'])
 
+checkpoint_callback = ModelCheckpoint(
+    'model_checkpoint.keras',  # Path where the model will be saved
+    monitor='val_loss',  # Metric to monitor (e.g., 'val_loss' or 'val_accuracy')
+    save_best_only=False,  # Save only the best model (based on validation loss or accuracy)
+    save_weights_only=False,  # Save the full model (not just weights)
+    mode='min',  # Save the model when the monitored metric is minimized (e.g., 'val_loss')
+    verbose=1  # Print a message when saving the model
+)
+
+if os.path.exists("model_checkpoint.keras"):
+    print("Loading checkpoint...")
+    model = tf.keras.models.load_model("model_checkpoint.keras")
+
 # Train the model
 history = model.fit(
     train_dataset,
     validation_data=val_dataset,
     epochs=10,
     steps_per_epoch = len(train_df) // batch_size,
-    validation_steps = len(val_df) // batch_size
+    validation_steps = len(val_df) // batch_size,
+    callbacks=[checkpoint_callback]
 )
 
 # Load test data from CSV
@@ -211,7 +229,7 @@ print(conf_matrix)
 
 # Save the Model
 ### Remember to change the model name to prevent overwriting existing models ###
-model.save('CountryClassifier_EfficientNetB0_10_epochs.keras')
+model.save('CountryClassifier_EfficientNetB5_10_epochs.keras')
 
 # Plot training history
 plt.figure(figsize=(12, 4))

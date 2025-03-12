@@ -17,7 +17,7 @@ def load_model_and_encoder(model_path, label_list):
     return model, label_encoder
 
 
-def load_and_preprocess_image(image_path, target_size = (224, 224)):
+def load_and_preprocess_image(image_path, target_size = (456, 456)):
     """
     Load an image, resize it, and normalize pixel values.
     """
@@ -42,7 +42,7 @@ def predict_country(model, label_encoder, image_path):
     return predicted_country[0]
 
 
-def main(image_path, model_path = 'CountryClassifier_EfficientNetB0_20_epochs.keras',
+def main(image_path, model_path = 'CountryClassifier_EfficientNetB0_10_epochs.keras',
          label_list = None):
     if label_list is None:
         label_list = ['United States', 'Brazil', 'Australia', 'Argentina', 'Russia', 'France',
@@ -87,5 +87,6 @@ def main(image_path, model_path = 'CountryClassifier_EfficientNetB0_20_epochs.ke
 
 
 if __name__ == '__main__':
-    image_path = input("Enter image file path:").strip('\"') # removes quotation marks in copied path, modify if needed.
-    main(image_path)
+    while True:
+        image_path = input("Enter image file path:").strip('\"') # removes quotation marks in copied path, modify if needed.
+        main(image_path)
