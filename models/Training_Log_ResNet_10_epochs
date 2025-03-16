@@ -1,0 +1,149 @@
+1175/1175 [==============================] - 231s 189ms/step - loss: 2.5937 - accuracy: 0.3258 - val_loss: 1.4178 - val_accuracy: 0.6157
+Epoch 2/10
+1175/1175 [==============================] - 248s 211ms/step - loss: 1.1003 - accuracy: 0.6921 - val_loss: 0.8410 - val_accuracy: 0.7785
+Epoch 3/10
+1175/1175 [==============================] - 416s 354ms/step - loss: 0.5090 - accuracy: 0.8518 - val_loss: 0.7052 - val_accuracy: 0.8292
+Epoch 4/10
+1175/1175 [==============================] - 235s 200ms/step - loss: 0.2907 - accuracy: 0.9132 - val_loss: 0.8214 - val_accuracy: 0.8312
+Epoch 5/10
+1175/1175 [==============================] - 243s 207ms/step - loss: 0.2133 - accuracy: 0.9351 - val_loss: 0.7118 - val_accuracy: 0.8530
+Epoch 6/10
+1175/1175 [==============================] - 394s 335ms/step - loss: 0.1552 - accuracy: 0.9534 - val_loss: 0.7883 - val_accuracy: 0.8406
+
+Epoch 00006: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05.
+Epoch 7/10
+1175/1175 [==============================] - 632s 538ms/step - loss: 0.0540 - accuracy: 0.9842 - val_loss: 0.6219 - val_accuracy: 0.8847
+Epoch 8/10
+1175/1175 [==============================] - 502s 427ms/step - loss: 0.0168 - accuracy: 0.9956 - val_loss: 0.6625 - val_accuracy: 0.8883
+Epoch 9/10
+1175/1175 [==============================] - 252s 214ms/step - loss: 0.0329 - accuracy: 0.9904 - val_loss: 0.7576 - val_accuracy: 0.8764
+Epoch 10/10
+1175/1175 [==============================] - 206s 175ms/step - loss: 0.0348 - accuracy: 0.9901 - val_loss: 0.7229 - val_accuracy: 0.8819
+
+Epoch 00010: ReduceLROnPlateau reducing learning rate to 2.499999936844688e-05.
+Predicted: ['Other' 'Brazil' 'Brazil' 'South Africa' 'Australia' 'Australia' 'Sweden'
+ 'Portugal' 'United States' 'United States' 'United States'
+ 'United States' 'Israel' 'Mexico' 'Botswana' 'Brazil' 'Australia' 'Other'
+ 'Other' 'South Korea' 'United States' 'South Korea' 'Malaysia'
+ 'United States' 'United States' 'United States' 'Other' 'Australia'
+ 'Brazil' 'Mexico' 'Malaysia' 'Sweden']
+Actual: ['Mexico' 'Brazil' 'Brazil' 'Other' 'Australia' 'Brazil' 'United States'
+ 'United States' 'United States' 'United States' 'United States'
+ 'United States' 'United States' 'Turkey' 'Other' 'Brazil' 'Australia'
+ 'Other' 'Other' 'India' 'United States' 'United States' 'United States'
+ 'United States' 'United States' 'United States' 'United States'
+ 'United States' 'Argentina' 'Mexico' 'Other' 'Russia']
+Predicted: ['Australia' 'Nigeria' 'Brazil' 'Mongolia' 'Brazil' 'Brazil' 'Other'
+ 'Sri Lanka' 'Australia' 'Mongolia' 'Other' 'Australia' 'Argentina'
+ 'Other' 'Other' 'Other' 'Turkey' 'Kenya' 'South Africa' 'Brazil'
+ 'Australia' 'Poland' 'Australia' 'Russia' 'Argentina' 'Australia'
+ 'Nigeria' 'Kenya' 'Mongolia' 'Russia' 'Australia' 'South Korea']
+Actual: ['Australia' 'Kenya' 'Brazil' 'Mongolia' 'Brazil' 'Argentina' 'Russia'
+ 'Other' 'Australia' 'Mongolia' 'Turkey' 'Argentina' 'Argentina' 'Other'
+ 'Brazil' 'Other' 'Turkey' 'Kenya' 'South Africa' 'Other' 'Australia'
+ 'Other' 'Australia' 'Other' 'Australia' 'Australia' 'Nigeria' 'Kenya'
+ 'Argentina' 'Other' 'Australia' 'Russia']
+Predicted: ['Australia' 'Brazil' 'Portugal' 'Australia' 'Brazil' 'Argentina' 'Brazil'
+ 'Argentina' 'Australia' 'Mongolia' 'Nigeria' 'Finland' 'Other' 'Brazil'
+ 'Australia' 'Other' 'Thailand' 'Australia' 'Russia' 'Other' 'Brazil'
+ 'Sweden' 'Brazil' 'Mongolia' 'South Korea' 'Brazil' 'United Kingdom'
+ 'Australia' 'Russia' 'Australia' 'Argentina' 'Australia']
+Actual: ['Australia' 'Brazil' 'South Africa' 'Australia' 'Brazil' 'Argentina'
+ 'Brazil' 'Argentina' 'Australia' 'Mongolia' 'Other' 'Other' 'Brazil'
+ 'Brazil' 'Other' 'Other' 'Other' 'South Africa' 'Russia' 'Other' 'Brazil'
+ 'Mexico' 'Brazil' 'Mongolia' 'Other' 'Brazil' 'Russia' 'Argentina'
+ 'Russia' 'Other' 'Argentina' 'Australia']
+Predicted: ['Brazil' 'Russia' 'Argentina' 'Australia' 'Colombia' 'Brazil' 'India'
+ 'Australia' 'Brazil' 'Brazil' 'Brazil' 'Argentina' 'Russia' 'Indonesia'
+ 'Nigeria' 'Russia' 'South Africa' 'Brazil' 'Mongolia' 'Brazil' 'Russia'
+ 'Poland' 'Australia' 'Russia' 'Mongolia' 'Brazil' 'Australia' 'Mongolia'
+ 'Mongolia' 'Portugal' 'Turkey' 'Kenya']
+Actual: ['Brazil' 'Other' 'Argentina' 'Australia' 'Other' 'Brazil' 'India'
+ 'Australia' 'Brazil' 'Brazil' 'Brazil' 'Argentina' 'Russia' 'Other'
+ 'Other' 'Russia' 'South Africa' 'Brazil' 'Mongolia' 'Other' 'Russia'
+ 'Other' 'Australia' 'Russia' 'Mongolia' 'Other' 'Australia' 'Mongolia'
+ 'Mongolia' 'Brazil' 'Turkey' 'Kenya']
+Predicted: ['Brazil' 'Brazil' 'Botswana' 'Australia' 'Australia' 'Brazil' 'Russia'
+ 'Nigeria' 'South Korea' 'Australia' 'South Africa' 'Finland' 'Nigeria'
+ 'Brazil' 'Argentina' 'Botswana' 'Botswana' 'United Kingdom' 'Russia'
+ 'Brazil' 'Mexico' 'Brazil' 'Brazil' 'Argentina' 'Australia' 'Brazil'
+ 'Brazil' 'Russia' 'Australia' 'Nigeria' 'Portugal' 'Russia']
+Actual: ['Brazil' 'Brazil' 'Other' 'Australia' 'Turkey' 'Brazil' 'Russia'
+ 'Nigeria' 'Russia' 'Australia' 'Australia' 'Other' 'Other' 'Brazil'
+ 'Argentina' 'Mexico' 'Other' 'Turkey' 'Russia' 'Brazil' 'Other' 'Brazil'
+ 'Kenya' 'Argentina' 'Australia' 'Brazil' 'Brazil' 'Other' 'Brazil'
+ 'India' 'Other' 'Russia']
+161/161 [==============================] - 56s 349ms/step - loss: 3.6330 - accuracy: 0.5477
+Test Accuracy: 54.77%
+Classification Report:
+C:\Users\shian\miniconda3\envs\cs178\lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\shian\miniconda3\envs\cs178\lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\shian\miniconda3\envs\cs178\lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+                precision    recall  f1-score   support
+
+     Argentina       0.67      0.67      0.67       441
+     Australia       0.77      0.87      0.82       752
+       Austria       0.00      0.00      0.00         0
+       Belgium       0.00      0.00      0.00         0
+      Botswana       0.00      0.00      0.00         0
+        Brazil       0.65      0.80      0.72       894
+      Bulgaria       0.00      0.00      0.00         0
+        Canada       0.00      0.00      0.00         0
+         Chile       0.00      0.00      0.00         0
+      Colombia       0.00      0.00      0.00         0
+       Czechia       0.00      0.00      0.00         0
+       Denmark       0.00      0.00      0.00         0
+       Finland       0.00      0.00      0.00         0
+        France       0.00      0.00      0.00         0
+       Germany       0.00      0.00      0.00         0
+         India       0.92      0.81      0.86       103
+     Indonesia       0.00      0.00      0.00         0
+       Ireland       0.00      0.00      0.00         0
+        Israel       0.00      0.00      0.00         0
+         Italy       0.00      0.00      0.00         0
+         Japan       0.00      0.00      0.00         0
+         Kenya       0.81      0.71      0.76       111
+     Lithuania       0.00      0.00      0.00         0
+      Malaysia       0.00      0.00      0.00         0
+        Mexico       0.43      0.26      0.33       219
+      Mongolia       0.72      0.86      0.78       118
+   Netherlands       0.00      0.00      0.00         0
+       Nigeria       0.69      0.91      0.78       206
+         Other       0.64      0.15      0.24      1489
+         Other       0.64      0.15      0.24      1489
+          Peru       0.00      0.00      0.00         0
+          Peru       0.00      0.00      0.00         0
+   Philippines       0.00      0.00      0.00         0
+        Poland       0.00      0.00      0.00         0
+        Poland       0.00      0.00      0.00         0
+      Portugal       0.00      0.00      0.00         0
+       Romania       0.00      0.00      0.00         0
+        Russia       0.62      0.65      0.63       392
+      Slovakia       0.00      0.00      0.00         0
+  South Africa       0.44      0.32      0.37       113
+   South Korea       0.00      0.00      0.00         0
+         Spain       0.00      0.00      0.00         0
+     Sri Lanka       0.00      0.00      0.00         0
+        Sweden       0.00      0.00      0.00         0
+   Switzerland       0.00      0.00      0.00         0
+      Thailand       0.00      0.00      0.00         0
+        Turkey       0.51      0.36      0.42       159
+       Ukraine       0.00      0.00      0.00         0
+United Kingdom       0.00      0.00      0.00         0
+ United States       0.75      0.53      0.62       154
+
+      accuracy                           0.55      5151
+     macro avg       0.18      0.17      0.17      5151
+  weighted avg       0.66      0.55      0.56      5151
+
+Confusion Matrix:
+[[294  24   0 ...   1   1   1]
+ [ 15 653   0 ...   2   2   2]
+ [  0   0   0 ...   0   0   0]
+ ...
+ [  0   0   0 ...   0   0   0]
+ [  0   0   0 ...   0   0   0]
+ [  1   9   2 ...   0   1  81]]
